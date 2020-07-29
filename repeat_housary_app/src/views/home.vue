@@ -1,14 +1,29 @@
 <template>
   <div>
-      <h1>
-          {{ $t("home.title") }}
-      </h1>
+
+    <br>
+    
+    <Aya />
+
+    <SiderImage source="childrens.svg"/>
+
+    <MainMenu />
+
   </div>
 </template>
 
 <script>
-export default {
 
+import Aya from "@/components/global/Aya"
+import SiderImage from "@/components/global/SiderImage"
+import MainMenu from "@/components/home/MainMenu"
+
+export default {
+    components: {
+        Aya,
+        SiderImage,
+        MainMenu
+    }
 }
 </script>
 
