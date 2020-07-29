@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "@/views/home.vue";
 import References from "@/views/references.vue";
 import ContactUs from "@/views/contactUs.vue";
+import About from "@/views/about.vue";
 import notFound from "@/components/error/NotFound.vue";
 
 import i18n from "@/i18n";
@@ -41,6 +42,14 @@ export default new VueRouter({
             title: `${i18n.t("references.title")}`
           }
         },
+        {
+					path: "about",
+					name: "About",
+					component: About,
+					meta: {
+						title: `${i18n.t("about.title")}`
+					}
+				},
         {
           path: "contact",
           name: "ContactUs",
