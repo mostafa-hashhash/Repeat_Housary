@@ -4,7 +4,7 @@ import App from './App.vue'
 import i18n from './i18n'
 import router from "./router";
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false 
 
 router.beforeEach((to, from, next) => {
   const nearestWithTitle = to.matched
